@@ -62,7 +62,7 @@
         "React (since 2014), iOS/Android, design tools, WordPress, project management, HTML, CSS, PHP, mySQL, JavaScript, UX, UI",
       projects: [
 		"Swedish Championships in Orienteering (Adobe Illustrator)",
-		"Rim Mourad Karate Champion (HTML/CSS/WordPress)",
+		"Rim Mourad Karate Champion (HTML/CSS/WordPress)", /* https://web.archive.org/web/20160329004050/http://rimmourad.se/ */
         "Kolmårdens djurpark (Ruby on Rails)",
         "Stadium Sports Camp (Ruby on Rails)",
         "Bibelstund (iOS/JavaScript/React/Titanium/Python)",

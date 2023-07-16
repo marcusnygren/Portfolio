@@ -28,14 +28,14 @@
 <SideNav bind:isOpen={isSideNavOpen}>
   <SideNavItems>
     <SideNavMenuItem href="/" text="About" />
-    <SideNavLink href="career" text="Career" />
+    <SideNavLink href="/career" text="Career" />
     <SideNavMenu text="Projects">
-      <SideNavMenuItem href="games" text="Games" />
-      <SideNavMenuItem href="web" text="Web" />
+      <SideNavMenuItem href="/projects/games" text="Games" />
+      <SideNavMenuItem href="/projects/web" text="Web" />
     </SideNavMenu>
-    <SideNavLink href="teaching" text="Teaching" />
-    <SideNavLink href="skills" text="Skills" />
-    <SideNavLink href="research" text="Research" />
+    <SideNavLink href="/teaching" text="Teaching" />
+    <!--<SideNavLink href="/skills" text="Skills" />
+    <SideNavLink href="/research" text="Research" />-->
     <SideNavDivider />
     <SideNavLink
       href="https://www.linkedin.com/in/marcusnygren/en-US"

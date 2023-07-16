@@ -1,10 +1,10 @@
 <script lang="ts">
   import { ListItem, UnorderedList } from "carbon-components-svelte";
-  import Project from "../../components/project.svelte";
+  import Project from "../../../components/project.svelte";
 </script>
 
 <div class="grid grid-cols-1 w-full">
-  <h3 class="mb-8 uppercase">Professional</h3>
+  <h3 class="mb-8 uppercase">Professionally</h3>
 
   <Project
     year="2022-2023"
@@ -32,12 +32,16 @@
       "msw",
       "OpenLayers",
       "Figma",
-      "Tailwind"
+      "Tailwind",
     ]}
-    iframe="https://www.bergenskart.no/portal/apps/sites/#/bergenskart/apps/504ddef40b8e425cb0e7fe4903d76140/explore"
+    links={[
+      "https://www.bergenskart.no/portal/apps/sites/#/bergenskart/apps/504ddef40b8e425cb0e7fe4903d76140/explore",
+    ]}
+    iframe=""
     >Customer portal for applying and managing parking permits via using a map,
     built from the ground-up in Svelte/TypeScript.
   </Project>
+
   <Project
     name="Web GIS application (NDA)"
     client="Telia"
@@ -50,7 +54,7 @@
       "System design",
       "Automatic tests",
       "Co-design workshops",
-      "UX/UI design"
+      "UX/UI design",
     ]}
     iframe="https://openlayers.org/en/latest/examples/mobile-full-screen.html"
     year="2021-2022"
@@ -76,6 +80,22 @@
     tools={["React", "Gatsby", "JavaScript", "Amazon Web Services", "Vercel"]}
   />
   <Project
+    name="Early DynaMaker concept & UX design"
+    client="SkyMaker"
+    year="2018"
+    functionalities={[
+      "Design for learning",
+      "UX design",
+      "Teaching",
+      "Coaching",
+      "Concept",
+    ]}
+    link="d66_10JTntM"
+    links={["https://docs.dynamaker.com/good-to-know"]}
+    >Consultant for SkyMaker, in preperation for them wanting to create a
+    UI/code tool where customers themselves could create 3D web configurators.
+  </Project>
+  <Project
     name="Bibelstund"
     links={[
       "https://www.bibelnidag.org/bibelstund/",
@@ -84,9 +104,18 @@
     functionalities={["Frontend", "Backend"]}
     client="Swedish Bible Society"
     year="2014"
-    tools={["React", "Reflux", "Python", "Django", "HTML", "CSS", "Cordova", "Titanium"]}
-    link="kEFQtzDrtnk"></Project
-  >
+    tools={[
+      "React",
+      "Reflux",
+      "Python",
+      "Django",
+      "HTML",
+      "CSS",
+      "Cordova",
+      "Titanium",
+    ]}
+    link="kEFQtzDrtnk"
+  />
 
   <h3 class="mb-8 mt-8 uppercase">Internal</h3>
   <Project
@@ -96,15 +125,30 @@
     tools={["SvelteKit", "TypeScript", "Tailwind", "Carbon Design System"]}
   />
 
+  <!--
+  <Project
+    year="2011-2015"
+    name="marcusnygren.se (WordPress)"
+    iframe="https://web.archive.org/web/20140109165842/http://www.marcusnygren.se/"
+  />
+  <Project
+    year="2016"
+    name="marcusnygren.se"
+    iframe="https://web.archive.org/web/20180417110339/http://marcusnygren.se/"
+  >(via Wayback Machine)</Project>-->
+
   <Project
     name="Kodkartan"
     year="2017-2018"
     client="Edvira"
     iframe="https://web.archive.org/web/20180321010112/https://kodkartan.se/"
-    tools={["React", "Meteor", "Node", "Express", "MongoDB", "Heroku"]}
-  />
+    tools={["React", "maps", "Meteor", "Node", "Express", "MongoDB", "Heroku"]}
+    >A map which visualizes Swedish municipalities' introduction of programming
+    in schools (running in Wayback Machine, so unfortunately the map/API data
+    won't be loaded).</Project
+  >
 
-  <h3 class="mb-8 mt-8 uppercase">University studies</h3>
+  <h3 class="mb-8 mt-8 uppercase">University projects</h3>
 
   <Project
     name="YoungDrive App"
@@ -116,9 +160,23 @@
       "https://www.researchgate.net/publication/335840966_Developing_a_Mobile_Learning_Application_for_Entrepreneurship_Education_in_Uganda_and_Zambia",
       "https://www.linkedin.com/pulse/developing-mobile-learning-application-education-uganda-marcus-nygren/",
     ]}
-    tools={["React", "JavaScript", "HTML", "CSS", "Node", "Meteor", "Cordova", "mongoDB", "Heroku", "GitHub", "CI/CD", "iOS", "Android", "web"]}
-    ></Project
-  >
+    tools={[
+      "React",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Node",
+      "Meteor",
+      "Cordova",
+      "mongoDB",
+      "Heroku",
+      "GitHub",
+      "CI/CD",
+      "iOS",
+      "Android",
+      "web",
+    ]}
+  />
 
   <Project
     name="IKEAswipe"
@@ -145,11 +203,42 @@
     </p>
   </Project>
 
-  <Project name="Inhibitor" year="2012" links={["inhibitor.pdf"]} tools={["WebGL", "JavaScript", "HTML", "CSS", "jQuery", "ThreeJS", "3DS Max"]}>
-  </Project>
+  <Project
+    name="Inhibitor"
+    year="2012"
+    iframe="/inhibitor.pdf"
+    links={[
+      "inhibitor.pdf",
+      "https://web.archive.org/web/20130601051847/http://3d.marcusnygren.se/",
+    ]}
+    tools={[
+      "WebGL",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "jQuery",
+      "ThreeJS",
+      "3DS Max",
+    ]}
+  />
 
-  <h3 class="mb-8 mt-8 uppercase">Hacks</h3>
-  <Project name="Travis" tools={["WebGL", "ThreeJS", "JavaScript", "HTML", "CSS", "linear algebra", "jQuery", "Google Maps"]} client="East Sweden Hack" year="2012" link=""
-    ></Project
+  <h3 class="mb-8 mt-8 uppercase">Hackathons</h3>
+  <Project
+    name="Traviz"
+    tools={[
+      "WebGL",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "linear algebra",
+      "jQuery",
+      "Google Maps",
+    ]}
+    client="East Sweden Hack"
+    year="2012"
+    link=""
+    vimeo
+    >Traffic accident visualizer using open data, WebGL and Google Maps. Demo
+    starts at 1:30.</Project
   >
 </div>

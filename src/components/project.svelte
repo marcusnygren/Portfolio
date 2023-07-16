@@ -17,6 +17,8 @@
   export let iframe = "";
   export let functionalities = [];
   export let tools = [];
+  export let image = "";
+  export let vimeo = false;
 
   let innerWidth = 0;
   let innerHeight = 0;
@@ -64,7 +66,7 @@
 
     <Accordion>
       {#each items as item}
-        <AccordionItem title="Awards {items ? '(' + items.length + ')' : ''}">
+        <AccordionItem title={item}>
           {item}
         </AccordionItem>
       {/each}
@@ -104,5 +106,17 @@
         allowfullscreen
       />
     </div>
+  {/if}
+  {#if image}
+    <img src={"/" + image} alt={"Screenshot from " + name} width={gridWidth} />
+  {/if}
+  {#if vimeo}
+    <iframe
+      title="vimeo-player"
+      src="https://player.vimeo.com/video/74610126?h=866ce837e5"
+      width={"100%"}
+      frameborder="0"
+      allowfullscreen
+    />
   {/if}
 </div>

@@ -2,7 +2,7 @@
   import Project from "../../components/project.svelte";
 </script>
 
-<h1>Events I've started</h1>
+<h1 class="mb-8">Events I've started</h1>
 
 <Project
   name="CoderDojo Norrköping"
