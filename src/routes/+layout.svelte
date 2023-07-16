@@ -33,7 +33,9 @@
       <SideNavMenuItem href="games" text="Games" />
       <SideNavMenuItem href="web" text="Web" />
     </SideNavMenu>
+    <SideNavLink href="teaching" text="Teaching" />
     <SideNavLink href="skills" text="Skills" />
+    <SideNavLink href="research" text="Research" />
     <SideNavDivider />
     <SideNavLink
       href="https://www.linkedin.com/in/marcusnygren/en-US"
