@@ -59,6 +59,52 @@
     stories into technical and UX tasks, and technical hand-over after the first
     prototype was successful.
   </Project>
+  <h3 class="mb-8 mt-8 uppercase">Awards (university projects)</h3>
+  <Project
+    link="pTzU9L-jnaE"
+    items={["1st place in Next public magnet, C Awards"]}
+    name="Rainbone"
+    year="2016"
+    tools={[
+      "GLSL",
+      "C++",
+      "dome",
+      "voice controlled",
+      "collaborative",
+      "game design",
+      "accessability",
+    ]}
+  >
+    <p>
+      A voice controlled cooperative game. It was developed mainly for dome
+      theaters (up to 100 players), but it is also portable to 2D screens and
+      Oculus Rift. Open source on Github.
+    </p>
+  </Project>
+  <Project
+    name="SumoBot Wars"
+    year="2015"
+    items={["2nd place in Best game, LiU Game Awards"]}
+    link="Ls2c9tOACmU"
+    functionalities={[
+      "Unreal Engine 4 (Blueprints)",
+      "AI enemy behaviour using Behaviour Trees",
+      "local multiplayer",
+      "player testing",
+      "game design",
+    ]}
+  />
+
+  <Project
+    items={[
+      "1st place in Best interaction design, C Awards",
+      "1st place in Best Technical Project in Media Technology, Linköping University",
+    ]}
+    link="fcklnezF1vg"
+    name="Ladybug"
+    year="2014"
+    tools={["Java", "Android", "multiplayer", "MATLAB", "Box2D", "mathematics", "peer-to-peer network communication"]}
+  />
   <h3 class="mb-8 mt-8 uppercase">Game jams</h3>
   <Project
     year={"2022"}
@@ -101,48 +147,4 @@
       Christmas Day.
     </p></Project
   >
-  <h3 class="mb-8 mt-8 uppercase">Awards (university projects)</h3>
-  <Project
-    link="pTzU9L-jnaE"
-    items={["1st place in Next public magnet, C Awards"]}
-    name="Rainbone"
-    year="2016"
-    tools={[
-      "GLSL",
-      "C++",
-      "dome",
-      "voice controlled",
-      "collaborative",
-      "game design",
-      "accessability",
-    ]}
-  >
-    <p>
-      A voice controlled cooperative game. It was developed mainly for dome
-      theaters (up to 100 players), but it is also portable to 2D screens and
-      Oculus Rift. Open source on Github.
-    </p>
-  </Project>
-  <Project
-    name="SumoBot Wars"
-    year="2015"
-    items={["2nd place in Best game, LiU Game Awards"]}
-    link="Ls2c9tOACmU"
-    tools={[
-      "Unreal Engine 4 (Blueprints)",
-      "dynamic AI enemy behaviour",
-      "local multiplayer",
-      "player testing",
-      "game design",
-      "photography/video editing",
-    ]}
-  />
-
-  <Project
-    items={["1st place in Best interaction design, C Awards"]}
-    link="fcklnezF1vg"
-    name="Ladybug"
-    year="2014"
-    tools={["Java", "Android", "multiplayer", "MATLAB", "Box2D"]}
-  />
 </div>

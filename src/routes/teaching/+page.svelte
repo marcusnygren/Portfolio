@@ -2,12 +2,14 @@
   import Project from "../../components/project.svelte";
 </script>
 
-<h1 class="mb-8">Events I've started</h1>
+<h1 class="mb-8">Teaching code and design with others</h1>
 
 <Project
   name="CoderDojo Norrköping"
   link="VJczan3lREk"
-  links={["https://www.youtube.com/watch?v=7XQOVKd-vVI"]}
+  links={["http://coderdojonkpg.se", "https://www.youtube.com/watch?v=7XQOVKd-vVI"]}
+  tools={["Scratch", "Blockly", "Code.org", "Unity", "HTML/CSS/JavaScript"]}
+  functionalities={["Teaching blocks- and flow -based programming", "Teaching web programming", "Teaching basic game design", "Leading the non-profit and board"]}
 >
   Founder & coach, CoderDojo Norrköping, 2014-2019 – teaching over 2000 kids
   web/game dev
@@ -27,12 +29,13 @@
   >
 </Project>
 
-<Project name="Hour of Code Norrköping" link="cxaWjy31tC8" year="2024" />
+<Project name="Hour of Code Norrköping" links={["https://www.svt.se/nyheter/lokalt/ost/lagstadieelever-lar-sig-koda"]} link="cxaWjy31tC8" year="2024" />
 
 <Project
   name="East Sweden Hack"
   link="11gtPHAAw0A"
   year="2015"
+  tools={["Node", "Express", "Arduino", "Raspberry Pi", "JavaScript", "Open data", "APIs"]}
   role="Project leader">Internet of things, web programming</Project
 >
 
@@ -42,7 +45,7 @@
   role="Project leader"
   links={["https://www.mikjam.se/", "https://www.mikjam.se/jams/190513"]}
   link="yNclj2vys4U"
-  ><ul>
+  >Themes:<ul>
     <li>Games and simulations</li>
     <li>VR & AR experiences</li>
     <li>Fake news - who can I trust?</li>

@@ -61,14 +61,25 @@
       skills:
         "React (since 2014), iOS/Android, design tools, WordPress, project management, HTML, CSS, PHP, mySQL, JavaScript, UX, UI",
       projects: [
-		"Swedish Championships in Orienteering (Adobe Illustrator)",
-		"Rim Mourad Karate Champion (HTML/CSS/WordPress)", /* https://web.archive.org/web/20160329004050/http://rimmourad.se/ */
+        "Swedish Championships in Orienteering (Adobe Illustrator)",
+        "Rim Mourad Karate Champion (HTML/CSS/WordPress)" /* https://web.archive.org/web/20160329004050/http://rimmourad.se/ */,
         "Kolmårdens djurpark (Ruby on Rails)",
         "Stadium Sports Camp (Ruby on Rails)",
         "Bibelstund (iOS/JavaScript/React/Titanium/Python)",
-		"Secret project for Apple (HTML/CSS/JavaScript)",
-		"ZooBooks by ZooWho (iOS/Objective-C/app marketing)"
+        "Secret project for Apple (HTML/CSS/JavaScript)",
+        "ZooBooks by ZooWho (iOS/Objective-C/app marketing)",
       ],
+    },
+  ];
+
+  let studies = [
+    {
+      name: "Linköping University",
+      role: "B.S. + M.S. Media Technology",
+      year: "2010-2016",
+      link: "https://liu.se/utbildning/program/6cmen",
+      description:
+        "I have a B.Sc + M.Sc. Media Technology & Engineering from Linköping University in Sweden. I took master courses in 2D, 3D, AR, VR, dome, app/web, UX/UI, data visualization projects + interdisciplinary courses in e-learning, intercultural communication, service design and change management.",
     },
   ];
 </script>
@@ -87,6 +98,31 @@
         <h6 class="mt-4">Projects:</h6>
         <UnorderedList>
           {#each job.projects as project}
+            <ListItem>
+              <p>{project}</p>
+            </ListItem>
+          {/each}
+        </UnorderedList>
+      {/if}
+    </AccordionItem>
+  {/each}
+</Accordion>
+
+<h3 class="mt-8 mb-4">Education</h3>
+<Accordion>
+  {#each studies as study}
+    <AccordionItem>
+      <svelte:fragment slot="title">
+        <h5>{study.name} {study.year}</h5>
+        <div>{study.role}</div>
+      </svelte:fragment>
+      <p>
+        {study.description}
+      </p>
+      {#if study.projects}
+        <h6 class="mt-4">Projects:</h6>
+        <UnorderedList>
+          {#each study.projects as project}
             <ListItem>
               <p>{project}</p>
             </ListItem>

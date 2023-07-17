@@ -25,7 +25,7 @@
   </svelte:fragment>
 </Header>
 
-<SideNav bind:isOpen={isSideNavOpen}>
+<SideNav bind:isOpen={isSideNavOpen} rail>
   <SideNavItems>
     <SideNavMenuItem href="/" text="About" />
     <SideNavLink href="/career" text="Career" />

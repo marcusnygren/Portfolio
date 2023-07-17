@@ -226,19 +226,23 @@
   <Project
     name="Traviz"
     tools={[
-      "WebGL",
       "JavaScript",
+      "WebGL",
       "HTML",
       "CSS",
+      "Open data",
       "linear algebra",
       "jQuery",
-      "Google Maps",
+      "Google Maps API",
+      "Swedish Transport Agency API"
     ]}
     client="East Sweden Hack"
-    year="2012"
+    year="2013"
     link=""
     vimeo
-    >Traffic accident visualizer using open data, WebGL and Google Maps. Demo
-    starts at 1:30.</Project
+    >We built a web app visualizing why traffic accidents happen. Technologies:
+    JavaScript and WebGL, Google Maps API for the map and the Swedish Transport
+    Agency API for open data. Traffic accident visualizer using open data, WebGL
+    and Google Maps. Demo starts at 1:30.</Project
   >
 </div>
